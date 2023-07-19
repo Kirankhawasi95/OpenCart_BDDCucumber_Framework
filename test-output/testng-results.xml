@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-19T15:39:47 IST" name="Suite" finished-at="2023-07-19T15:40:08 IST" duration-ms="20648">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNgRunner@35dab4eb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-07-19T15:39:47 IST" name="ChromeTest" finished-at="2023-07-19T15:40:08 IST" duration-ms="20648">
+      <class name="testRunner.TestNgRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestNgRunner@35dab4eb]" started-at="2023-07-19T15:39:47 IST" name="setUpClass" finished-at="2023-07-19T15:39:48 IST" duration-ms="1241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7068e664]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="DefineBrowser(java.lang.String)[pri:0, instance:testRunner.TestNgRunner@35dab4eb]" started-at="2023-07-19T15:39:48 IST" name="DefineBrowser" finished-at="2023-07-19T15:39:48 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DefineBrowser -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestNgRunner@35dab4eb]" started-at="2023-07-19T15:39:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-19T15:40:03 IST" duration-ms="14277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User sueccessfully performe the product check"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login with Valid Credentials"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestNgRunner@35dab4eb]" started-at="2023-07-19T15:40:03 IST" name="tearDownClass" finished-at="2023-07-19T15:40:08 IST" duration-ms="5073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestNgRunner -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
