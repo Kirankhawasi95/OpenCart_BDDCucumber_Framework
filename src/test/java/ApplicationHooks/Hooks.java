@@ -69,7 +69,7 @@ public class Hooks {
 				e.getMessage();
 			}
 			// This new path for jenkins
-			String newImageString = "http://localhost:8089/job/OpenCart_BDDCucumber_Framework/ws/ScreenShots/" + "image/png";
+			String newImageString = "http://localhost:8089/job/OpenCart_BDDCucumber_Framework/ws/ScreenShots/embedded1" + "image/png";
 			//return newImageString;
 
 		}
