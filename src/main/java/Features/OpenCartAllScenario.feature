@@ -1,6 +1,6 @@
 Feature: Login with Valid Credentials
 
-  @regression
+
   Scenario: Successful Login with Valid Credentials
     When User navigate to MyAccount menu
     And click on Login
@@ -49,7 +49,7 @@ Feature: Login with Valid Credentials
   Then user should navigate to checkout page 
   
   @sanity
-  Scenario: User sueccessfully performe the product check 
+  Scenario: User sueccessfully performe the product checkout 
   When User is on checkout page 
   And User is verify redio button for adress both should be working fine 
   And User enters the following address details with coloumns

@@ -47,7 +47,7 @@ public class Hooks {
 
 	@After(order = 0)
 	public  void quitBrowser() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 	
@@ -55,7 +55,7 @@ public class Hooks {
 	@After(order = 1)
 	public  void tearDown(Scenario scenario) {
 		
-		String TimeStamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		//String TimeStamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		
 		 System.out.println("Scenario status ======>"+scenario.getStatus());
 		if (scenario.isFailed()) {
@@ -63,17 +63,17 @@ public class Hooks {
 			byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(sourcePath, "image/png", scenario.getName());
 			
-//			try {
-//				scenario.attach(sourcePath, "http://localhost:8082/reports/AutomationTest-ExtentReport.html" + "image/png", scenario.getName());
-//			} catch (Exception e) {
-//				e.getMessage();
-//			}
-//			// This new path for jenkins
-//			String newImageString = "http://localhost:8082/reports/AutomationTest-ExtentReport.html" + "image/png";
-//			//return newImageString;
-//
+			try {
+				scenario.attach(sourcePath, "http://localhost:8089/job/OpenCart_BDDCucumber_Framework/ws/ScreenShots/" + "image/png", scenario.getName());
+			} catch (Exception e) {
+				e.getMessage();
+			}
+			// This new path for jenkins
+			String newImageString = "http://localhost:8089/job/OpenCart_BDDCucumber_Framework/ws/ScreenShots/" + "image/png";
+			//return newImageString;
+
 		}
-		//driver.quit();
+		driver.quit();
 	}
 
 }
