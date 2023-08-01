@@ -96,7 +96,7 @@ public class CheckOutPage_Step {
 		{
 			System.out.println("there is product is added");
 			
-		}else if(ItemQty * 10000 ==ItemPrice)
+		}else if(ItemQty * 1000 ==ItemPrice)
 		{
 			Assert.assertTrue(true);
 			System.out.println("productqty item is matched with the price Qty");
