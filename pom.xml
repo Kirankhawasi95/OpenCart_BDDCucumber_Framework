@@ -8,7 +8,7 @@
 
 	<packaging>jar</packaging>
 
-	<name>CucumberCrosBrowserTesting</name>
+	<name>OpenCart_CucumberProject</name>
 	<url>http://maven.apache.org</url>
 
 
