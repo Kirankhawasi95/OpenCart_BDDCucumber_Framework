@@ -57,7 +57,8 @@ public class DriverFactory {
 
 		getDriver().manage().deleteAllCookies();
 		getDriver().manage().window().maximize();
-		getDriver().get("http://localhost/opencart/upload");
+		//getDriver().get("http://localhost/opencart/upload");
+		getDriver().get("https://demo.opencart.com/index.php");
 		
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));

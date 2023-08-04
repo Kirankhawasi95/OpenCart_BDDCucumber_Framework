@@ -15,7 +15,9 @@ import com.DriverFactory.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import testlink.api.java.client.TestLinkAPIClient;
 import utilities.ConfigReader;
+import utilities.TestLinkIntigration;
 
 public class Hooks {
 	
@@ -23,6 +25,7 @@ public class Hooks {
 	private  WebDriver driver;
 	private ConfigReader configReader;
 	static Properties prop;
+	public TestLinkIntigration TestLinkIntigration;
 	
 	
 
@@ -57,7 +60,18 @@ public class Hooks {
 		
 		//String TimeStamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		
-		 System.out.println("Scenario status ======>"+scenario.getStatus());
+		 System.out.println("scenario Name is===>" +"  " + scenario.getName()+ "  "+ "And Scenario status is ======>"+scenario.getStatus());
+		 
+		 
+
+			try {
+				TestLinkIntigration.UpdateResult(scenario, "This test case is Executed through automation scripts and test case is passed", TestLinkAPIClient.TEST_PASSED);
+			} catch (Throwable e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		 
+		 
 		if (scenario.isFailed()) {
 			
 			byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
@@ -68,9 +82,21 @@ public class Hooks {
 			} catch (Exception e) {
 				e.getMessage();
 			}
+			
 			// This new path for jenkins
 			String newImageString = "http://localhost:8089/job/OpenCart_BDDCucumber_Framework/ws/ScreenShots/embedded1" + "image/png";
 			//return newImageString;
+			
+			
+			try {
+				TestLinkIntigration.UpdateResult(scenario, "This test case is Executed through automation scripts and test case is Failed", TestLinkAPIClient.TEST_FAILED);
+			} catch (Throwable e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			
 
 		}
 		driver.quit();

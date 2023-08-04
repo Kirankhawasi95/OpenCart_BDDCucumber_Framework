@@ -1,7 +1,7 @@
 Feature: Login with Valid Credentials
 
-
-  Scenario: Successful Login with Valid Credentials
+ @sanity
+  Scenario: User Successfully Login with valid creational to application
     When User navigate to MyAccount menu
     And click on Login
     And User enters Email as "admin@gmail.com" and Password as "Kiran$178"
@@ -48,7 +48,7 @@ Feature: Login with Valid Credentials
   And User click on check out button 
   Then user should navigate to checkout page 
   
-  @sanity
+ 
   Scenario: User sueccessfully performe the product checkout 
   When User is on checkout page 
   And User is verify redio button for adress both should be working fine 

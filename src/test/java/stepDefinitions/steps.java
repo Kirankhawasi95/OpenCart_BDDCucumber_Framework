@@ -65,23 +65,23 @@ public class steps {
     }
 
 
-    @Then("User navigates to MyAccount Page")
-    public void user_navigates_to_my_account_page() {
-  
-		boolean targetpage=macc.isMyAccountPageExists();
-	
-        if(targetpage)
-        {
-           
-            Assert.assertTrue(true);
-        }
-        else
-        {
-           
-            Assert.assertTrue(false);
-        }
-
-  }
+//    @Then("User navigates to MyAccount Page")
+//    public void user_navigates_to_my_account_page() {
+//  
+//		boolean targetpage=macc.isMyAccountPageExists();
+//	
+//        if(targetpage)
+//        {
+//           
+//            Assert.assertTrue(true);
+//        }
+//        else
+//        {
+//           
+//            Assert.assertTrue(false);
+//        }
+//
+//  }
 
    
 

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 1, 2023 12:08:41 PM</span></a>
+<a href="#"><span class="badge badge-primary">Aug 4, 2023 01:05:53 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 1, 2023 12:08:41 PM</h3>
+<h3>Aug 4, 2023 01:05:53 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 1, 2023 12:08:50 PM</h3>
+<h3>Aug 4, 2023 01:06:16 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='62%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='83%'><b>5</b> steps passed</small></div>
 <div>
-<small data-tooltip='12%'><b>1</b> steps failed,
-<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='16%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login with Valid Credentials":7.643
+"Login with Valid Credentials":21.052
 };
 </script>
 <div class="row">
@@ -232,7 +232,7 @@ grandChildCount: 5,
 passGrandChild: 5,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 2,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -267,7 +267,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login with Valid Credentials</p>
             <p class="text-sm">
-              <span>12:08:42 PM</span> / <span>00:00:07:643</span>
+              <span>1:05:54 PM</span> / <span>00:00:21:052</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -276,9 +276,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Login with Valid Credentials</h5>
-<span class='badge badge-success'>08.01.2023 12:08:42 PM</span>
-<span class='badge badge-danger'>08.01.2023 12:08:50 PM</span>
-<span class='badge badge-default'>00:00:07:643</span>
+<span class='badge badge-success'>08.04.2023 1:05:54 PM</span>
+<span class='badge badge-danger'>08.04.2023 1:06:15 PM</span>
+<span class='badge badge-default'>00:00:21:052</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -290,7 +290,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User sueccessfully performe the product checkout</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>User Successfully Login with valid creational to application</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -298,55 +298,42 @@ eventsCount: 5,
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.CheckOutPage_Step.user_is_on_checkout_page()">
-                <span>When User is on checkout page</span>
+              <div class="step pass-bg" title="stepDefinitions.steps.user_navigate_to_my_account()">
+                <span>When User navigate to MyAccount menu</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.CheckOutPage_Step.user_is_verify_redio_button_for_adress_both_should_be_working_fine()">
-                <span>And User is verify redio button for adress both should be working fine</span>
+              <div class="step pass-bg" title="stepDefinitions.steps.click_on_login()">
+                <span>And click on Login</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.CheckOutPage_Step.user_enters_the_following_address_details_with_coloumns(io.cucumber.datatable.DataTable)">
-                <span>And User enters the following address details with coloumns</span>
-      <div><table class='markup-table table '><tr><td>First Name</td><td>Last Name</td><td>Company Name</td><td>Address 1</td><td>Address 2</td><td>City</td><td>Postcode</td></tr><tr><td>Kiran k</td><td>kpk</td><td>micro</td><td>kumbar galii</td><td>bengaluru</td><td>bengalru</td><td>5600011</td></tr></table>
-      </div>
+              <div class="step pass-bg" title="stepDefinitions.steps.user_enters_email_as_and_password_as(java.lang.String,java.lang.String)">
+                <span>And User enters Email as "admin@gmail.com" and Password as "Kiran$178"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.CheckOutPage_Step.click_on_countinue()">
-                <span>And click on countinue</span>
+              <div class="step pass-bg" title="stepDefinitions.steps.click_on_login_button()">
+                <span>And Click on Login button</span>
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="stepDefinitions.CheckOutPage_Step.user_verify_the_product_qty_and_price_of_the_product()">
-                <span>And User verify the product qty and price of the product</span>
+              <div class="step fail-bg" title="stepDefinitions.steps.user_navigates_to_my_account_page()">
+                <span>Then User navigates to MyAccount Page</span>
       <div>
-        <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at stepDefinitions.CheckOutPage_Step.user_verify_the_product_qty_and_price_of_the_product(CheckOutPage_Step.java:109)
-	at ?.User verify the product qty and price of the product(file:///C:/Users/kpkmt942/eclipse-workspace/EndToEnd_OpenCart_CucumberProject/src/main/java/Features/OpenCartAllScenario.feature:60)
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.steps.user_navigates_to_my_account_page(steps.java:81)
+	at ?.User navigates to MyAccount Page(file:///C:/Users/kpkmt942/eclipse-workspace/EndToEnd_OpenCart_CucumberProject/src/main/java/Features/OpenCartAllScenario.feature:9)
 </textarea>
       
       </div>
               </div>
-              <div class="step skip-bg" title="stepDefinitions.CheckOutPage_Step.product_price_should_be_same_accourding_to_added_product()">
-                <span>And product price should be same accourding to added product</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="stepDefinitions.CheckOutPage_Step.click_in_confirm_the_order()">
-                <span>Then Click in confirm the order</span>
-      <div>Step skipped
-      </div>
-              </div>
               <div class="step pass-bg" title="AFTER">
                 <span>ApplicationHooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>User sueccessfully performe the product checkout
+      <div>User Successfully Login with valid creational to application
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../ScreenShots/embedded1.png' src="../ScreenShots/embedded1.png">
     
@@ -402,11 +389,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>12:08:49 PM</td>
+<td>13:05:59 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>And User verify the product qty and price of the product</a>
+<a href="#" class="linked" test-id='1' id='9'>Then User navigates to MyAccount Page</a>
 <div class="">
-<span class="badge badge-default">Login with Valid Credentials.User sueccessfully performe the product checkout.And User verify the product qty and price of the product</span>
+<span class="badge badge-default">Login with Valid Credentials.User Successfully Login with valid creational to application.Then User navigates to MyAccount Page</span>
 </div>
 </td>
 </tr>
